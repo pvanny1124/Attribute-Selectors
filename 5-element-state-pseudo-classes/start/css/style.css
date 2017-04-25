@@ -1,0 +1,17 @@
+/* UI element states pseudo-classes ------------ */
+
+/*When input and textarea are clikced on (focused)*/
+input:focus,
+textarea:focus {
+    border-color: #52bab3;
+}
+
+/* :disabled only targets elements that are disabled. You can be more specific by adding the type of element, such as input:disabled*/
+input:disabled {
+    background: #ddd;
+}
+
+/*The :checked selector targets an element that has been checked by the user. Recap: we are target the label element preceeding the checkbox input element*/
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+}

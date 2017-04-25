@@ -1,0 +1,26 @@
+/* Structural Pseudo-classes------------------ */
+
+h1 {
+    text-align: center;
+}
+
+li:first-child {
+    background: #52bab3;
+    color: white;
+}
+
+li:last-child {
+    border: none;
+}
+
+/*Using :only-child gives properties to any element that only has 1 child, adding an element in front such as span:only-child will only target span elements that are the only child of a parent*/
+span:only-child {
+    color: #52bab3;
+    font-size: 1.5em;
+}
+
+/*Following targets li tags that do not have any text inside of them. You could also use :empty to select any element that doesn't have any text */
+/*Could use this to warn the user that there is an empty element, or to warn yourself that an element is empty*/
+li:empty {
+    background: tomato;
+}
